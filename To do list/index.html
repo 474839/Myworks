@@ -1,26 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>To do list </title>
     <meta charset="UTF-8">
-    <meta name="description" content="This is my website">
-    <meta name="keywords" content="website, HTML, metadata">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my to-do list website">
+    <meta name="keywords" content="website, HTML, Bootstrap, To-Do">
     <meta name="author" content="Gauthamkrishna.U">
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+    <title>To-Do List</title>
 
-<h1>To do list</h1>
+    <!-- Bootstrap CSS (via CDN) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-<div class="container">
-    
-   <input type="text" id="myInput" placeholder="Enetr a new task">
-   <button id="add-task">Add task</button>
-   <ul id="task-list"></ul>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.cs">
 
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">To-Do List</h1>
 
-   <script src="js/script.js"></script>
+        <!-- Input and Button -->
+        <div class="row mb-3">
+            <div class="col-md-8">
+                <input type="text" id="myInput" class="form-control" placeholder="Enter a new task">
+            </div>
+            <div class="col-md-4">
+                <button id="add-task" class="btn btn-success btn-block">Add Task</button>
+            </div>
+        </div>
+
+        <!-- Task List -->
+        <ul id="task-list" class="list-group"></ul>
+    </div>
+
+    <!-- Bootstrap JS (via CDN) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
 
 </body>
-
 </html>
